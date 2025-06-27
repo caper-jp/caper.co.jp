@@ -120,6 +120,120 @@ h3 {
     color: var(--text-color);
 }
 
+/* News section */
+#news {
+    background-color: var(--secondary-background);
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 2rem;
+    min-width: 100px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+/* Company section */
+#company {
+    max-width: 800px;
+}
+
+.company-info {
+    margin-bottom: 3rem;
+}
+
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.company-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.company-table td:first-child {
+    font-weight: 600;
+    width: 120px;
+    color: var(--primary-color);
+}
+
+.mission {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-background);
+    border-radius: 0.5rem;
+}
+
+.mission h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Recruit section */
+#recruit {
+    background-color: var(--secondary-background);
+}
+
+.recruit-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job-positions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.job-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.job-item p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.recruit-content > p:last-child {
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.recruit-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.recruit-content a:hover {
+    text-decoration: underline;
+}
+
 /* Contact section */
 #contact {
     text-align: center;
