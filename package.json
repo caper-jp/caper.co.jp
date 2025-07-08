@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static website for CAPER Corporation",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
+    "dev": "python3 server.py",
     "preview": "open http://localhost:3000"
   },
   "keywords": [
