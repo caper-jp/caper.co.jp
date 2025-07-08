@@ -905,3 +905,223 @@ body {
         break-inside: avoid;
     }
 }
+
+/* Privacy Policy Styles */
+.privacy-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--background-white);
+    min-height: calc(100vh - 70px);
+    padding-top: calc(70px + var(--spacing-2xl));
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privacy-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.privacy-intro {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-section-item {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.privacy-section-item:last-child {
+    border-bottom: none;
+    margin-bottom: var(--spacing-lg);
+}
+
+.privacy-section-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.privacy-section-item p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+
+.privacy-section-item p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-section-item ul {
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.privacy-section-item li {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Nested list styles */
+.privacy-section-item ol {
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.privacy-section-item ol ol,
+.privacy-section-item ul ul,
+.privacy-section-item ol ul,
+.privacy-section-item ul ol {
+    margin: var(--spacing-xs) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.privacy-section-item ol ol ol,
+.privacy-section-item ul ul ul,
+.privacy-section-item ol ul ol,
+.privacy-section-item ul ol ul {
+    padding-left: var(--spacing-md);
+}
+
+.privacy-section-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-section-item a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.privacy-date {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    text-align: center;
+    font-weight: 500;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.privacy-actions {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+}
+
+.privacy-actions .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.privacy-actions .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.privacy-actions .btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.privacy-actions .btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+/* Responsive styles for privacy policy */
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: var(--spacing-xl) 0;
+        padding-top: calc(70px + var(--spacing-xl));
+    }
+
+    .privacy-title {
+        font-size: 2rem;
+    }
+
+    .privacy-intro {
+        font-size: 1rem;
+    }
+
+    .privacy-section-item {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+    }
+
+    .privacy-section-item h2 {
+        font-size: 1.25rem;
+    }
+
+    .privacy-section-item ul,
+    .privacy-section-item ol {
+        padding-left: var(--spacing-md);
+    }
+
+    .privacy-section-item ol ol,
+    .privacy-section-item ul ul,
+    .privacy-section-item ol ul,
+    .privacy-section-item ul ol {
+        padding-left: var(--spacing-md);
+    }
+
+    .privacy-section-item ol ol ol,
+    .privacy-section-item ul ul ul,
+    .privacy-section-item ol ul ol,
+    .privacy-section-item ul ol ul {
+        padding-left: var(--spacing-sm);
+    }
+
+    .privacy-actions .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-title {
+        font-size: 1.75rem;
+    }
+
+    .privacy-section-item h2 {
+        font-size: 1.125rem;
+    }
+
+    .privacy-section-item p,
+    .privacy-section-item li {
+        font-size: 0.95rem;
+    }
+}
