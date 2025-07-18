@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー - 株式会社CAPER</title>
-  <meta name="description" content="株式会社CAPERのプライバシーポリシーページです。個人情報の取り扱いについて詳しく説明しています。">
+  <title>データ健全性ポリシー - 株式会社CAPER</title>
+  <meta name="description" content="株式会社CAPERのデータ健全性ポリシーページです。データ取得と利用方針について詳しく説明しています。">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="policy-loader.js"></script>
@@ -46,8 +46,8 @@
   <main class="main">
     <section class="privacy-section">
       <div class="container">
-        <div class="privacy-content" id="privacy-content">
-          <div class="loading">プライバシーポリシーを読み込み中...</div>
+        <div class="privacy-content" id="data-policy-content">
+          <div class="loading">データ健全性ポリシーを読み込み中...</div>
         </div>
 
         <div class="privacy-actions">
@@ -85,16 +85,16 @@
   </footer>
 
   <script>
-    // Initialize privacy policy loader
+    // Initialize data policy loader
     document.addEventListener('DOMContentLoaded', function () {
-      const privacyLoader = new PolicyLoader({
-        markdownFile: 'privacy_policy.md',
-        contentElementId: 'privacy-content',
-        loadingText: 'プライバシーポリシーを読み込み中...',
-        errorText: 'プライバシーポリシーの読み込みに失敗しました。'
+      const dataPolicyLoader = new PolicyLoader({
+        markdownFile: 'data_policy.md',
+        contentElementId: 'data-policy-content',
+        loadingText: 'データ健全性ポリシーを読み込み中...',
+        errorText: 'データ健全性ポリシーの読み込みに失敗しました。'
       });
 
-      privacyLoader.loadPolicy();
+      dataPolicyLoader.loadPolicy();
     });
   </script>
 </body>
