@@ -496,6 +496,11 @@ body {
     line-height: 1.6;
 }
 
+.news-excerpt a:link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /* Company Section */
 .company-grid {
     display: grid;
